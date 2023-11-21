@@ -8,6 +8,7 @@ def main():
     clock  = pg.time.Clock()
     bg_img = pg.image.load("ex01/fig/pg_bg.jpg")
     koukaton = pg.image.load ("ex01/fig/3.png")
+    koukaton = pg.transform.flip(koukaton,True,False)
     tmr = 0
 
     while True:
@@ -15,7 +16,7 @@ def main():
             if event.type == pg.QUIT: return
 
         screen.blit(bg_img, [0, 0])
-        screen.blit(koukaton,[50,50])
+        screen.blit(koukaton,[100,100])
         pg.display.update()
         tmr += 1        
         clock.tick(10)
