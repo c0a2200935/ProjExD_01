@@ -19,7 +19,7 @@ def main():
         screen.blit(bg_img, [0, 0])
         #screen.blit(koukaton,[100,100])#練習２こうかとん画像貼り付け
         screen.blit(koukaton_list[tmr%2],[300,200])
-        pg.display.update()
+        pg.display.update()#
         tmr += 1        
         clock.tick(10)
 
